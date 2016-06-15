@@ -2,6 +2,9 @@
   "name": "website",
   "version": "1.0.0",
   "private": true,
+  "scripts": {
+    "surge": "hexo generate && cd public && surge"
+  },
   "hexo": {
     "version": "3.2.0"
   },
