@@ -11,9 +11,11 @@ $block-caption
 
 $block
   background: #fff
-  box-shadow: 1px 2px 3px #ddd
-  border: 1px solid color-border
-  border-radius: 3px
+  border-bottom: 1px solid color-border
+  @media mq-normal
+    box-shadow: 5px 5px 10px #ddd
+    border-radius: 3px
+    border: 1px solid color-border
 
 $base-style
   h1

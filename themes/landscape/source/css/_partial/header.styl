@@ -1,6 +1,4 @@
 #header
-  height: banner-height
-  position: relative
   border-bottom: 1px solid color-border
   &:before, &:after
     content: ""
@@ -17,7 +15,16 @@
   position: relative
   overflow: hidden
 
-#banner
+.header-row
+  background-color: color-header-background
+
+.banner-wrap
+  position: relative
+  height: banner-height
+  @media mq-normal
+    height: banner-height-normal
+
+.banner
   position: absolute
   top: 0
   left: 0
@@ -37,7 +44,7 @@
 
 $logo-text
   text-decoration: none
-  color: #fff
+  color: black
   font-weight: 300
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3)
 
@@ -45,25 +52,33 @@ $logo-text
   @extend $logo-text
   font-size: logo-size
   line-height: logo-size
-  letter-spacing: 2px
 
-#subtitle
+.subtitle
   @extend $logo-text
   font-size: subtitle-size
   line-height: subtitle-size
-  letter-spacing: 1px
+  color: #777;
 
-#subtitle-wrap
-  margin-top: subtitle-size
+// Align .kronon-logo and .subtitle-wrap on the same line.
+.kronan-logo
+  border: 1px solid red
+  width: (line-height / 2)
+  margin: 3px 0 0 1px
 
-#main-nav
+.subtitle-wrap
+  margin-top: -(line-height / 4 * 3)
+  margin-left: 30px
+
+.main-title
   float: left
-  margin-left: -15px
+  padding: 5px 0 0 5px
+
+.main-nav
+  float: right
 
 $nav-link
   float: left
-  color: #fff
-  opacity: 0.6
+  color: #777
   text-decoration: none
   text-shadow: 0 1px rgba(0, 0, 0, 0.2)
   transition: opacity 0.2s

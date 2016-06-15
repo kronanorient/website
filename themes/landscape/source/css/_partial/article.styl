@@ -27,6 +27,8 @@
 
 .article-header
   padding: article-padding article-padding 0
+  @media mq-mobile
+    padding: 0
 
 .article-title
   text-decoration: none
@@ -43,6 +45,8 @@
   clearfix()
   color: color-default
   padding: 0 article-padding
+  @media mq-mobile
+    padding: 0
   p, table
     line-height: line-height
     margin: line-height 0
@@ -121,11 +125,16 @@
       height: 100%
       margin-top: 0
 
+.article-more-link
+  clearfix()
+
 .article-more-link a
+  float: right
   display: inline-block
   line-height: 1em
   padding: 6px 15px
-  border-radius: 15px
+  border: 1px solid color-border
+  border-radius: 5px
   background: color-background
   color: color-grey
   text-shadow: 0 1px #fff
