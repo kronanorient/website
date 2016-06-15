@@ -1,1 +1,3 @@
-<%- partial('_partial/archive', {pagination: 2, index: true}) %>
+<% site.pages.find({ 'upcoming-event': true }).sort('date').each(function (page) { %>
+  <%- partial('_partial/event', { post: page, index: true }) %>
+<% }) %>
