@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "start": "hexo serve",
     "surge": "hexo generate && cd public && surge"
   },
   "hexo": {
