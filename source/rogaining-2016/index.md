@@ -14,8 +14,10 @@ _Гродненский областной исполнительный коми
 _Чемпионатом Гродненской области по рогейну_ в г. Гродно, Республика Беларусь.
 
 ## Последние обновления
+- 26 июля, доступны [стартовые протоколы][start-protocols]
 - 11 июля, опубликован [Бюллетень №1][bulletin-1].
 
+[start-protocols]: https://docs.google.com/spreadsheets/d/1Qu1mF__35KLgRnDKcKMKpFblTaPl2VwnxeSUmaBZhSM/pubhtml
 [bulletin-1]: https://drive.google.com/file/d/0B3ITOCI-O3udZ0t5d3lCdVVINzh1dVFkT0NXWlVyY3ZsZkU4/view?pref=2&pli=1
 
 <!-- more -->
